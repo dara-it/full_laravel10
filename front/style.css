@@ -1,0 +1,28 @@
+/* css styles */
+
+html, body {
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+    width: 100%;          /* Ensure the body takes full width */
+    margin: 0;            /* Remove any default margin */
+    padding: 0;           /* Remove any default padding */
+}
+
+.container {
+    width: 100%;
+    max-width: 100vw; /* Ensure the container is responsive */
+    box-sizing: border-box; /* Prevent padding/margin from affecting layout */
+}
+
+
+
+.note-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f57c00;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
