@@ -2,9 +2,39 @@
 
 html, body {
     overflow-x: hidden;  /* Prevent horizontal scrolling */
-    width: 100%;          /* Ensure the body takes full width */
-    margin: 0;            /* Remove any default margin */
-    padding: 0;           /* Remove any default padding */
+    width: 90%;          /* Ensure the body takes full width */
+    margin: 0 auto;      /* Remove any default margin */
+    padding: 0;          /* Remove any default padding */
+}
+
+/* fix screen on mobile */
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;     /* Full width on mobile devices */
+    }
+}
+
+/* fix screen on mobile ipad */
+@media (max-width: 1024px) {
+    html, body {
+        width: 100%;     /* Full width on mobile devices */
+    }
+}
+
+/* Sticky navbar only for screens larger than 768px (PCs and larger tablets) */
+@media (min-width: 769px) {
+    .navbar.sticky-top {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+}
+
+/* For smaller screens (mobile/tablets), don't apply sticky */
+@media (max-width: 768px) {
+    .navbar.sticky-top {
+        position: static; /* Remove sticky behavior on mobile */
+    }
 }
 
 .container {
@@ -47,3 +77,4 @@ html, body {
 .navbar-nav .nav-link h8 {
     margin: 0;
 }
+
